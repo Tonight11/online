@@ -3,8 +3,7 @@ import router from "@/router";
 import { useAuthStore } from "@/store/auth";
 
 const requestAxios = axios.create({
-    // baseURL: 'https://basic-server123.herokuapp.com'
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://basic-server123.herokuapp.com'
 })
 
 requestAxios.interceptors.response.use(null, error => {
